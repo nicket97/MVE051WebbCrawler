@@ -1,0 +1,193 @@
+
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.HashSet;
+import java.util.PriorityQueue;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
+
+public class Index implements Runnable {
+	private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
+	private static final String DB_URL = "jdbc:mysql://localhost:3306/matte";
+	
+	//  Database credentials
+	private static final String USER = "java";
+	private static final String PASS = "1234";
+	
+	private static final String DB_NAME = "pages";
+	
+	static Connection conn;
+	private static PriorityQueue<String> queue = new PriorityQueue<String>(); 
+    private static final String DELIMS = "[ ]+";
+	
+	public Index() throws SQLException, ClassNotFoundException{
+		try{
+			System.out.println("Connecting to database...");
+		//STEP 2: Register JDBC driver
+        Class.forName(JDBC_DRIVER);
+        //STEP 3: Open a connection
+        
+        conn = DriverManager.getConnection(DB_URL,USER,PASS);
+		}
+		catch(SQLException se){
+			se.printStackTrace();
+    }
+		/*catch(ClassNotFoundException e){
+			e.printStackTrace();
+    }*/
+		
+		
+	}
+	public static void indexInsert(HashSet<String> urls) {
+		queue.addAll(urls);
+		
+		
+		
+	}
+	
+	public static void getUrls(String c) throws SQLException{
+    // to hold the paragrafs
+    org.jsoup.select.Elements p = new org.jsoup.select.Elements();
+    org.jsoup.select.Elements t = new org.jsoup.select.Elements();
+        try {
+            // TODO code application logic here
+            if(true){ 
+                    p.clear();
+                    t.clear();
+                    p.addAll(getText(c));
+                    t.addAll(gett(c));
+                    index(p,t, c);
+            }   
+    
+            
+            
+        } catch (IOException ex) {
+            //Logger.getLogger(Crawler.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+    
+    }
+    private static org.jsoup.select.Elements getText(String cUrl) throws IOException {
+        
+            Document doc = Jsoup.connect(cUrl).get();
+            org.jsoup.select.Elements links = doc.select("p,dd");
+            //System.out.println(cUrl+"::::::"+links);
+            return links;
+        
+    }
+
+    private static org.jsoup.select.Elements getH(String cUrl) throws IOException {
+        
+        
+            Document doc = Jsoup.connect(cUrl).get();
+            org.jsoup.select.Elements links = doc.select("h1");
+            return links;
+        
+         
+    }
+    private static org.jsoup.select.Elements gett(String cUrl) throws IOException {
+        
+        
+            Document doc = Jsoup.connect(cUrl).get();
+            org.jsoup.select.Elements links = doc.select("title");
+            return links;
+        
+         
+    }
+private static void index(Elements p, Elements t, String u) throws SQLException {
+        
+        
+        Statement stmt = null ;
+        
+        String pageText = p.text();
+        pageText.toLowerCase();
+        int length = pageText.length();
+        String ord1[] = pageText.split(DELIMS);
+        
+        String titel = t.text();
+        titel.toLowerCase();
+        
+        
+        
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+
+            String sql;
+            pageText = pageText.replaceAll(",","");
+            pageText = pageText.replaceAll("'","");
+            pageText = pageText.replaceAll("\\[.*?\\]", "");
+            //System.out.println("inserts u" + u);
+            sql = "INSERT INTO "+ DB_NAME +".doc (doc_id, url,length,text,headline,titel)VALUES (null,'"+u+"',"+length+",'"+pageText+"','"+pageHeadline+"','"+titel+"')" ;
+            stmt = conn.createStatement();
+            stmt.executeUpdate(sql);
+            String id = getId(u);
+            System.out.println(id);
+            insertWord(id, ord1);
+            Thread.sleep(1);
+            
+        }catch(SQLException se){
+            //Handle errors for JDBC
+            se.printStackTrace();
+        }catch(Exception e){
+            //Handle errors for Class.forName
+            e.printStackTrace();
+            System.out.println("hej");
+        }
+    }
+private static void insertWord(String id, String[] words) throws SQLException{
+	Statement stmt = conn.createStatement();
+	for(String w : words){
+		String sql = "INSERT INTO " + DB_NAME + ".word (word_id, doc_id, word)VALUES (null,'"+id+"','"+w+"')" ;
+		System.out.println(sql);
+        stmt = conn.createStatement();
+        stmt.executeUpdate(sql);
+	}
+	
+}
+private static String getId(String url) throws SQLException{
+	Statement stmt = conn.createStatement();
+    String sql;
+    sql = "SELECT doc_id FROM " + DB_NAME + ".doc WHERE url LIKE '"+ url +"'";
+    ResultSet rs = stmt.executeQuery(sql);
+    if(rs.next()){
+    	String id = rs.getString("doc_id");
+    	return id;
+	}
+    else{
+    	return null;
+    }
+	
+}
+@Override
+public void run() {
+	// TODO Auto-generated method stub
+	while(true){
+		if(queue.size() > 0){
+		try {
+			getUrls(queue.peek());
+			queue.poll();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		}
+		else{
+			try {
+				System.out.println(queue.size());
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}
+}

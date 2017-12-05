@@ -1,0 +1,103 @@
+2017-12-05 10:59:11,123 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-12-05 11:21:56,338 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Crwaler:Crwaler:0.0.1-SNAPSHOT @ C:\Users\nicla\MVE051WebbCrawler\Crwaler\pom.xml.
+2017-12-05 11:21:58,448 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:21:58,456 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\main\resources
+2017-12-05 11:21:58,456 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:21:58,464 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\test\resources
+2017-12-05 11:21:58,484 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Crwaler/src
+2017-12-05 11:21:58,484 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /Crwaler/src/test/java because it overlaps with /Crwaler/src
+2017-12-05 11:21:58,592 [Worker-4] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-12-05 11:21:59,156 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Crwaler:Crwaler:0.0.1-SNAPSHOT @ C:\Users\nicla\MVE051WebbCrawler\Crwaler\pom.xml.
+2017-12-05 11:21:59,599 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Crwaler/src
+2017-12-05 11:21:59,607 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /Crwaler/src/test/java because it overlaps with /Crwaler/src
+2017-12-05 11:21:59,695 [Worker-4] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2017-12-05 11:21:59,851 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:21:59,855 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\main\resources
+2017-12-05 11:21:59,855 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:21:59,868 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\test\resources
+2017-12-05 11:23:49,804 [Worker-4] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-12-05 11:23:50,249 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Crwaler:Crwaler:0.0.1-SNAPSHOT @ C:\Users\nicla\MVE051WebbCrawler\Crwaler\pom.xml.
+2017-12-05 11:23:50,289 [Worker-4] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-12-05 11:23:51,390 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/jdbc/jdbc//jdbc-.pom
+2017-12-05 11:23:51,402 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for jdbc:jdbc:jar: is missing, no dependency information available
+2017-12-05 11:24:08,766 [Worker-4] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-12-05 11:24:09,166 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Crwaler:Crwaler:0.0.1-SNAPSHOT @ C:\Users\nicla\MVE051WebbCrawler\Crwaler\pom.xml.
+2017-12-05 11:24:09,266 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.pom
+2017-12-05 11:24:09,362 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.pom
+2017-12-05 11:24:09,427 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar
+2017-12-05 11:24:09,586 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar
+2017-12-05 11:24:09,829 [Worker-4] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-12-05 11:24:09,984 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:24:10,048 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\main\resources
+2017-12-05 11:24:10,051 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:24:10,064 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\test\resources
+2017-12-05 11:24:11,280 [Worker-18] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-12-05 11:24:11,357 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:24:11,361 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\main\resources
+2017-12-05 11:24:11,369 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:24:11,385 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\test\resources
+2017-12-05 11:24:37,643 [Worker-15] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-12-05 11:24:37,663 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:24:37,683 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\main\resources
+2017-12-05 11:24:37,687 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:24:37,699 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\test\resources
+2017-12-05 11:25:16,836 [Worker-19] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-12-05 11:25:16,860 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:25:16,876 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\main\resources
+2017-12-05 11:25:16,880 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:25:16,888 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\test\resources
+2017-12-05 11:25:44,760 [Worker-15] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-12-05 11:25:44,768 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:25:44,780 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\main\resources
+2017-12-05 11:25:44,784 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:25:44,788 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\test\resources
+2017-12-05 11:26:25,671 [Worker-3] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-12-05 11:26:25,683 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:26:25,695 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\main\resources
+2017-12-05 11:26:25,707 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:26:25,715 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\test\resources
+2017-12-05 11:27:52,588 [Worker-18] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-12-05 11:27:52,600 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:27:52,612 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\main\resources
+2017-12-05 11:27:52,620 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:27:52,636 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\test\resources
+2017-12-05 11:28:31,978 [Worker-4] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-12-05 11:28:31,998 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:28:32,022 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\main\resources
+2017-12-05 11:28:32,034 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:28:32,046 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\test\resources
+2017-12-05 11:41:17,302 [Worker-25] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-12-05 11:41:17,310 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:41:17,322 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\main\resources
+2017-12-05 11:41:17,322 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:41:17,334 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\test\resources
+2017-12-05 11:42:34,535 [Worker-23] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-12-05 11:42:34,555 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:42:34,572 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\main\resources
+2017-12-05 11:42:34,576 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:42:34,584 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\test\resources
+2017-12-05 11:43:00,039 [Worker-3] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-12-05 11:43:00,047 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:43:00,055 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\main\resources
+2017-12-05 11:43:00,063 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:43:00,071 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\test\resources
+2017-12-05 11:43:09,717 [Worker-3] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-12-05 11:43:09,729 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:43:09,741 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\main\resources
+2017-12-05 11:43:09,749 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:43:09,757 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\test\resources
+2017-12-05 11:49:23,737 [Worker-28] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-12-05 11:49:23,750 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:49:23,758 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\main\resources
+2017-12-05 11:49:23,758 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:49:23,766 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\test\resources
+2017-12-05 11:51:39,012 [Worker-29] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-12-05 11:51:39,024 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:51:39,036 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\main\resources
+2017-12-05 11:51:39,044 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:51:39,056 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\test\resources
+2017-12-05 11:52:49,469 [Worker-31] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2017-12-05 11:52:49,493 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:52:49,517 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\main\resources
+2017-12-05 11:52:49,529 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-12-05 11:52:49,543 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\nicla\MVE051WebbCrawler\Crwaler\src\test\resources

@@ -1,0 +1,45 @@
+
+public class Start {
+	
+	// en set för att hålla domain object
+		public static HashSet<String> domains = new HashSet<String>();
+		//url för att börja crawlingen
+		public String url = "http://www.gp.se/";
+		
+		// konstruktor för Start
+		public Start(){
+			
+			newDomain(url);
+			
+			
+		}
+		//metod som tar hand om nya domäner
+		public static void newDomain(String u){
+			//TODO lägg till setDissalowd annrop
+			// object för uri
+			URI uri = null;
+			// försöker skapa ett URI object med länken till konstruktorn
+			try {
+				uri = new URI(u);
+			} catch (URISyntaxException e) {
+				// TODO Auto-generated catch block
+				//e.printStackTrace();
+			}
+			// om jag lyckades skapa objectet lägg till ett nytt object för domain med domänen som hämtas från objectet
+			if(uri != null){	
+		    String domain = uri.getHost();
+		    	if(domains.add(domain)){
+		    domain = domain.startsWith("www.") ? domain.substring(4) : domain;
+		    Domain d  = new Domain(domain, u);
+		    //System.out.println(domains.size());
+		    Thread thread = new Thread(d);
+			thread.start();
+		    
+				}
+		    }
+		}
+		// main metod
+		public static void main(String args[]){
+			new Start();
+		}
+}
